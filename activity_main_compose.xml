@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_compose">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#e2e3e7"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="67dp"
+            android:paddingLeft="8sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:scaleType="fitXY"
+            android:onClick="back"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:paddingTop="6sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="20dp"
+            android:text="Compose"
+            android:textColor="#00000f"
+
+            android:textSize="30dp" />
+
+
+        <ImageButton
+            android:id="@+id/attatch"
+            android:paddingLeft="8sp"
+
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:onClick="attatch"
+            android:layout_weight="0"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/attatch" />
+
+        <ImageButton
+            android:id="@+id/send"
+            android:paddingLeft="8sp"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="send"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/send" />
+    </LinearLayout>
+
+    <EditText
+        android:paddingTop="16sp"
+        android:paddingLeft="16sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="0"
+    android:hint="From"/>
+
+    <EditText
+        android:paddingTop="16sp"
+        android:paddingLeft="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="To"/>
+
+    <EditText
+        android:paddingTop="16sp"
+        android:paddingLeft="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="Subject"/>
+
+    <EditText
+        android:paddingTop="16sp"
+        android:paddingLeft="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Compose Mail"
+        android:gravity="top"/>
+</LinearLayout>
